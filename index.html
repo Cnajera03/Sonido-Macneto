@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonido Magneto</title>
+  <link rel="stylesheet" href="sonido.css">
 </head>
 <body>
-    dj set test !fdsfkjsdnhfksdfnhsdki
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">SONIDO MAGNETO</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#videos">Videos</a>
+      <a href="#contact">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <video autoplay muted loop playsinline>
+      <source src="images/djvid1.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1>SONIDO MAGNETO</h1>
+
+      <p>
+        Weddings • Quinceañeras • Birthdays • Corporate Events
+      </p>
+
+      <a href="#contact" class="btn">
+        BOOK YOUR EVENT
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+
+    <h2>About Us</h2>
+
+    <p>
+      Bringing energy, professional sound, lighting,
+      and unforgettable experiences to every event.
+      We specialize in weddings, quinceañeras,
+      birthdays, and private celebrations.
+    </p>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+
+    <h2>Event Highlights</h2>
+
+    <div class="gallery-grid">
+
+      <img src="images/djdance.jpg" alt="">
+      <img src="images/djdance2.jpg" alt="">
+      <img src="images/djdance3.jpg" alt="">
+      <img src="images/djdance4.jpg" alt="">
+
+    </div>
+
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos" class="videos">
+
+    <h2>Party Highlights</h2>
+
+    <div class="video-grid">
+
+      <video controls>
+        <source src="images/djvid1.mp4" type="video/mp4">
+      </video>
+
+      <video controls>
+        <source src="images/djvid2.mp4" type="video/mp4">
+      </video>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+
+    <h2>Book Your Event</h2>
+
+    <form>
+
+      <input type="text" placeholder="Name" required>
+
+      <input type="email" placeholder="Email" required>
+
+      <input type="text" placeholder="Phone Number">
+
+      <input type="date">
+
+      <textarea placeholder="Tell us about your event"></textarea>
+
+      <button type="submit">
+        Send Inquiry
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h3>SONIDO MAGNETO</h3>
+
+    <p>Professional DJ Entertainment<br>Made By|CN</p>
+
+  </footer>
+
 </body>
 </html>
