@@ -82,35 +82,56 @@
   </section>
 
   <!-- VIDEOS -->
-  <section id="videos" class="videos">
+<section id="videos" class="videos">
 
     <h2>Party Highlights</h2>
 
     <div class="video-grid">
 
-      <video controls>
-        <source src="images/djvid1.mp4" type="video/mp4">
-      </video>
-
-      <video controls>
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        webkit-playsinline>
         <source src="images/djvid2.mp4" type="video/mp4">
       </video>
 
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        webkit-playsinline>
+        <source src="images/djvid3.mp4" type="video/mp4">
+      </video>
+
     </div>
+ <!--fallback <h2>DJ Setup</h2> -->
 
-  </section>
+  <div class="video-grid">
+
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+      webkit-playsinline
+      poster="images/djsetup.jpg">
+
+      <source src="images/djvid04.mp4" type="video/mp4">
+
+    </video>
+
+  </div>
+
+</section>
+</section>
   <!--fallback-->
-<video
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-  poster="images/djsetup.jpg">
-
-  <source src="images/djvid1.mp4" type="video/mp4">
-
-</video>
+ 
   <!-- CONTACT -->
   <section id="contact" class="contact">
 
