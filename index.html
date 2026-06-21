@@ -5,25 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sonido MACNETO</title>
   <link rel="stylesheet" href="sonido.css">
+  
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <header>
-    <div class="logo">SONIDO MACNETO</div>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#videos">Videos</a>
-      <a href="#contact">Book Now</a>
-    </nav>
-  </header>
+  <div class="logo">SONIDO MAGNETO</div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <nav id="nav-menu">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Book Now</a>
+  </nav>
+
+</header>
 
   <!-- HERO -->
   <section class="hero">
 
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline preload="auto" webkit-playsinline>
       <source src="images/djvid1.mp4" type="video/mp4">
     </video>
 
@@ -91,7 +99,18 @@
     </div>
 
   </section>
+  <!--fallback-->
+<video
+  autoplay
+  muted
+  loop
+  playsinline
+  preload="auto"
+  poster="images/djsetup.jpg">
 
+  <source src="images/djvid1.mp4" type="video/mp4">
+
+</video>
   <!-- CONTACT -->
   <section id="contact" class="contact">
 
@@ -125,6 +144,6 @@
     <p>Professional DJ Entertainment<br>Made By|CN</p>
 
   </footer>
-
+<script src="sonido.js"></script>
 </body>
 </html>
