@@ -528,3 +528,9 @@ footer h3{
     box-shadow:
     0 0 20px rgba(0,229,255,.3);
 }
+
+video{
+    display:block;
+    width:100%;
+    background:black;
+}

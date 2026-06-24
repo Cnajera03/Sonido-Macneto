@@ -7,28 +7,31 @@ menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
-// FORCE VIDEO AUTOPLAY ON MOBILE
+// VIDEO FIX FOR MOBILE
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
 
     const videos = document.querySelectorAll("video");
 
     videos.forEach(video => {
 
         video.muted = true;
-        video.setAttribute("muted", "");
-        video.setAttribute("playsinline", "");
-        video.setAttribute("autoplay", "");
-        video.setAttribute("loop", "");
+        video.defaultMuted = true;
+        video.playsInline = true;
 
-        const playPromise = video.play();
+        const playVideo = () => {
+            video.play().catch(() => {});
+        };
 
-        if (playPromise !== undefined) {
-            playPromise.catch(error => {
-                console.log("Autoplay prevented:", error);
-            });
-        }
+        playVideo();
+
+        document.addEventListener(
+            "touchstart",
+            playVideo,
+            { once: true }
+        );
 
     });
 
 });
+
